@@ -1,5 +1,4 @@
 import { Component } from "react";
-import PropTypes from "prop-types";
 import styles from "./ContactAddForm.module.css";
 
 const { form, label, input, button } = styles;
@@ -62,9 +61,5 @@ class ContactAddForm extends Component {
     );
   }
 }
-
-ContactAddForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default ContactAddForm;

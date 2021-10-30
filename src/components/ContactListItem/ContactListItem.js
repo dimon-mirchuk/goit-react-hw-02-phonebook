@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "./ContactListItem.module.css";
 
-const { item, text, span, button } = styles;
+const { text, span, button } = styles;
 
 const ContactListItem = ({ id, name, number, onDelete }) => {
   return (
-    <li className={item}>
+    <>
       <p className={text}>
         {name}: <span className={span}>{number}</span>
       </p>
@@ -17,7 +17,7 @@ const ContactListItem = ({ id, name, number, onDelete }) => {
       >
         Delete
       </button>
-    </li>
+    </>
   );
 };
 
